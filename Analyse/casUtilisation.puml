@@ -1,0 +1,52 @@
+@startuml
+left to right direction
+
+actor "Utilisateur" as utilisateur
+
+
+utilisateur -- (Ajouter dépense mensuelle)
+utilisateur -- (Ajouter revenu mensuel )
+utilisateur -- (Ajouter objectif mensuel)
+utilisateur -- (Ajouter objectif annuel)
+utilisateur -- (Gérer le crédit)
+utilisateur -- (Afficher les dépenses préventives mensuelles)
+utilisateur -- (Afficher dépenses mensuelles )
+utilisateur -- (Afficher dépenses annuelles )
+utilisateur -- (Recevoir des alertes)
+ 
+
+(Ajouter dépense mensuelle) <.. (Ajouter catégorie) : <<include>>
+(Ajouter dépense mensuelle) <.. (Supprimer catégorie) : <<include>>
+(Ajouter dépense mensuelle) <... (S'authentification) : <<include>>
+
+
+(Ajouter revenu mensuel ) <.. (Ajouter personne) : <<include>>
+(Ajouter revenu mensuel ) <.. (Ajouter source) : <<include>>
+(Ajouter revenu mensuel ) <.. (Supprimer personne) : <<include>>
+(Ajouter revenu mensuel ) <.. (Supprimer source) : <<include>>
+(Ajouter revenu mensuel ) <... (S'authentification) : <<include>>
+
+
+(Gérer le crédit) <.. (Ajouter crédit) : <<include>>
+(Gérer le crédit) <.. (Modifier crédit) : <<include>>
+(Gérer le crédit) <.. (Supprimer crédit) : <<include>>
+(Gérer le crédit) <.. (Suivre remboursement) : <<include>>
+(Gérer le crédit) <... (S'authentification) : <<include>>
+
+(Ajouter objectif mensuel) <... (S'authentification) :<<include>>
+(Ajouter objectif annuel) <... (S'authentification)
+(Afficher les dépenses préventives mensuelles) <...(S'authentification)
+(Afficher dépenses mensuelles ) <... (S'authentification) 
+(Afficher dépenses annuelles ) <... (S'authentification) 
+(Recevoir des alertes) <... (S'authentification) 
+
+
+
+
+
+
+
+
+
+
+@enduml
