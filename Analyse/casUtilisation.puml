@@ -17,28 +17,30 @@ utilisateur -- (Recevoir des alertes)
 
 (Ajouter dépense mensuelle) <.. (Ajouter catégorie) : <<include>>
 (Ajouter dépense mensuelle) <.. (Supprimer catégorie) : <<include>>
-(Ajouter dépense mensuelle) <... (S'authentification) : <<include>>
+(Ajouter dépense mensuelle) ...> (S'authentification) : <<include>>
 
 
 (Ajouter revenu mensuel ) <.. (Ajouter personne) : <<include>>
 (Ajouter revenu mensuel ) <.. (Ajouter source) : <<include>>
 (Ajouter revenu mensuel ) <.. (Supprimer personne) : <<include>>
 (Ajouter revenu mensuel ) <.. (Supprimer source) : <<include>>
-(Ajouter revenu mensuel ) <... (S'authentification) : <<include>>
+(Ajouter revenu mensuel ) ...> (S'authentification) : <<include>>
 
 
-(Gérer le crédit) <.. (Ajouter crédit) : <<include>>
-(Gérer le crédit) <.. (Modifier crédit) : <<include>>
-(Gérer le crédit) <.. (Supprimer crédit) : <<include>>
-(Gérer le crédit) <.. (Suivre remboursement) : <<include>>
-(Gérer le crédit) <... (S'authentification) : <<include>>
+(Gérer le crédit) <.. (Ajouter crédit) :<<include>>
+(Gérer le crédit) <.. (Modifier crédit)  :<<include>>
+(Gérer le crédit) <.. (Supprimer crédit)  :<<include>>
+(Gérer le crédit) <.. (Suivre remboursement) :<<include>>
+(Gérer le crédit) ...> (S'authentification) : <<include>>
 
-(Ajouter objectif mensuel) <... (S'authentification) :<<include>>
-(Ajouter objectif annuel) <... (S'authentification)
-(Afficher les dépenses préventives mensuelles) <...(S'authentification)
-(Afficher dépenses mensuelles ) <... (S'authentification) 
-(Afficher dépenses annuelles ) <... (S'authentification) 
-(Recevoir des alertes) <... (S'authentification) 
+(Ajouter objectif mensuel) ...> (S'authentification) :<<include>>
+(Ajouter objectif annuel) ...> (S'authentification) :<<include>>
+(Afficher les dépenses préventives mensuelles) ...>(S'authentification) :<<include>>
+(Afficher dépenses mensuelles ) ...> (S'authentification) :<<include>>
+(Afficher dépenses annuelles ) ...> (S'authentification) :<<include>>
+(Recevoir des alertes) ...> (S'authentification) :<<include>>
+
+(Inscription) <.. (S'authentification)
 
 
 
