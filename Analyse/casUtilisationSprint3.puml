@@ -1,0 +1,13 @@
+@startuml
+left to right direction
+
+actor "Membre de famille" as utilisateur
+
+utilisateur -- (CRUD objectif mensuel)
+utilisateur -- (Afficher les dépenses préventives mensuelles)
+utilisateur -- (Recevoir des alertes)
+
+
+@enduml
+
+

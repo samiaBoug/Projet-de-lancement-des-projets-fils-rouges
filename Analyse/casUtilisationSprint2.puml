@@ -1,0 +1,10 @@
+@startuml
+left to right direction
+
+actor "Membre de la famille" as utilisateur
+
+utilisateur -- (CRUD membres de la famille)
+utilisateur -- (CRUD source de revenu)
+utilisateur -- (CRUD revenu mensuel )
+
+@enduml
