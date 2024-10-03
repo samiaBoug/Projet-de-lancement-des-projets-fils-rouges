@@ -1,0 +1,9 @@
+@startuml
+left to right direction
+
+actor "Membre de la famille" as utilisateur
+
+utilisateur -- (CRUD catégories)
+
+
+@enduml

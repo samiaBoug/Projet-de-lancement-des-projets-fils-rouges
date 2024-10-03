@@ -3,10 +3,9 @@ left to right direction
 
 actor "Membre de la famille" as utilisateur
 
-utilisateur -- (CRUD catégories)
+
 utilisateur -- (CRUD dépense mensuelle)
 
+
+
 @enduml
-
-
-
